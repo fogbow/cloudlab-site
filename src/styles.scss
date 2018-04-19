@@ -6,3 +6,26 @@ html,
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+footer {
+  background-color: $primary;
+  height: 120px;
+}
+
+@mixin section-spacing {
+  padding-top: $spacer * 2;
+  padding-bottom: $spacer * 2;
+}
+
+.main {
+  background-color: $cyan;
+  @include section-spacing;
+
+  h2 {
+    color: $primary;
+  }
+
+  p {
+    color: $white;
+  }
+}

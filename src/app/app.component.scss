@@ -1,4 +1,25 @@
+@mixin border-default($color) {
+  border-bottom: solid 4px $color;
+}
+
 .nav-section {
-  background-color: $primary;
-  color: $white;
+  background-color: #464D7F;
+  color: #ffffff;
+
+  a:link,
+  a:visited {
+    color: #ffffff;
+    @include border-default(transparent);
+    transition: border-color .5s;
+  }
+
+  a:active,
+  a:hover,
+  a.active {
+    border-bottom-color: #ffffff;
+  }
+}
+
+.main-title {
+  @include border-default(#ffffff);
 }
