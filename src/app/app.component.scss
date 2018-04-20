@@ -6,16 +6,16 @@
   background-color: #464D7F;
   color: #ffffff;
 
-  a:link,
-  a:visited {
+  a.nav-link:link,
+  a.nav-link:visited {
     color: #ffffff;
     @include border-default(transparent);
     transition: border-color .5s;
   }
 
-  a:active,
-  a:hover,
-  a.active {
+  a.nav-link:active,
+  a.nav-link:hover,
+  a.nav-link.active {
     border-bottom-color: #ffffff;
   }
 }

@@ -17,15 +17,46 @@ footer {
   padding-bottom: $spacer * 2;
 }
 
-.main {
+.section-main {
   background-color: $cyan;
   @include section-spacing;
 
   h2 {
-    color: $primary;
+    color: $secondary;
   }
 
   p {
     color: $white;
+  }
+}
+
+.section-primary {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  background-color: $secondary;
+  @include section-spacing;
+
+  h2 {
+    color: $cyan;
+  }
+
+  p {
+    color: $white;
+  }
+}
+
+.section-secondary {
+  background-color: $cyan;
+  @include section-spacing;
+
+  h2 {
+    color: $secondary;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    color: $primary;
+    font-size: 1.2rem;
   }
 }

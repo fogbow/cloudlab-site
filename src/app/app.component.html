@@ -1,24 +1,26 @@
 <div class="nav-section pt-3">
   <div class="container">
-    <div class="row">
-      <div class="col-md-8 offset-md-2">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
 
         <div class="main-title container text-center pt-2 pb-3">
-          <img src="assets/imgs/logo_pb.png" alt="Cloudlab Br" width="100px">
+          <a routerLink="">
+            <img src="assets/imgs/logo_pb.png" alt="Cloudlab Br" width="100px">
+          </a>
         </div>
         <nav>
-          <ul class="nav justify-content-center">
+          <ul class="nav nav-fill">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Status</a>
+              <a routerLink="/status" routerLinkActive="active" class="nav-link">Status</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
+              <a routerLink="/team" routerLinkActive="active" class="nav-link">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a routerLink="/contact" routerLinkActive="active" class="nav-link">Contact</a>
             </li>
           </ul>
         </nav>
