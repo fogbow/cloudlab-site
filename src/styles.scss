@@ -9,7 +9,7 @@ body {
 
 footer {
   background-color: $primary;
-  height: 120px;
+  min-height: 120px;
 }
 
 @mixin section-spacing {
