@@ -2,10 +2,9 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <h2>Status</h2>
+        <h2>Ambiente experimental especializado com acesso direto ao hardware da infraestrutura</h2>
         <div class="row justify-content-center">
           <div class="col-md-8">
-            <p>Aqui se encontra uma descrição do que seria o testbed.</p>
           </div>
         </div>
       </div>
@@ -14,21 +13,22 @@
 </section>
 <section class="section-secondary">
   <div class="container">
-    <h2>Aqui se encontra um título</h2>
+    <h2>Casos de uso</h2>
     <div class="row">
       <div class="col-md-11 offset-md-1">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<ul>
+		<li>Modificação de serviços de nuvem: alguns experimentos visam desenvolver ou modificar serviços de ambientes de nuvem existentes (e.g. Openstack), o que pode demandar que determinadas porções do experimento tenham acesso privilegiado à infraestrutura do testbed, tais como uma rede de controle separada ou acesso ao hardware físico;</li>
+		<li>Testes com heurísticas de alocação de recursos em nuvem: testes com heurísticas de alocação podem demandar um controle total a um recurso físico da rede;</li>
+		<li>Experimentos com mecanismos de alta disponibilidade: experimentos que envolvem testes com alta disponibilidade em nuvem podem exigir tráfego de sincronização e de migração de VMs entre diferentes servidores físicos, potencialmente entre as diferentes regiões geográficas onde se encontram os recursos físicos do testbed;</li>
+		<li>Caracterização de tráfego em ambientes de nuvem: é desejável que o ambiente possa capturar pacotes, para se determinar o perfil de um tráfego de controle de um ambiente de nuvem, para pesquisas voltadas à engenharia de tráfego e segurança;</li>
+		<li>Ataques à rede de controle: para experimentos de segurança em nuvem é desejável que a rede de controle e mesmo os servidores de controle de um dado experimento sejam isolados, de maneira a evitar que testes de segurança/ataques não interfiram no funcionamento do testbed;</li>
+		<li>Eficiência energética: alguns experimentos de nuvem voltados à eficiência energética monitoram um dado recurso físico para a análise de consumo de energia associado a diversas operações e para a determinação de heurísticas de alocação baseadas em eficiência energética;</li>
+		<li>Controle de nuvens distribuídas geograficamente: é interessante que o ambiente possa alocar recursos em diferentes regiões geográficas, de maneira a permitir testes com diferentes estratégias de alocação para recursos distribuídos;</li>
+		<li>Uso de hardwares especializados: dada a dificuldade de se ter acesso a alguns recursos de hardware no Brasil, é interessante que o ambiente seja capaz de prover acesso a alguns recursos de hardware especializados;</li>
+		<li>Testes de desempenho com alta precisão: alguns experimentos demandam acesso exclusivo a recursos de infraestrutura para se garantir sua precisão e reprodutibilidade, especialmente testes envolvendo medição de latência ou testes de carga;</li>
+		<li>Testes comparativos: uma situação comum é a necessidade de se comparar duas soluções distintas sobre a mesma infraestrutura de hardware, não só para determinar qual é a melhor solução como para analisar ganhos/overheads entre as soluções.</li>
+	</ul>
         <img src="http://via.placeholder.com/800x600" alt="img" width="400px" class="float-right ml-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 mb-4">
-        <img src="http://via.placeholder.com/800x600" alt="img" class="img-fluid">
-      </div>
-      <div class="col-md-6">
-        <img src="http://via.placeholder.com/800x600" alt="img" class="img-fluid">
       </div>
     </div>
   </div>
